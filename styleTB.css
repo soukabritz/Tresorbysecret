@@ -1,0 +1,98 @@
+.nav {
+    display: flex; /* Aligne les éléments en ligne */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    list-style-type: none; /* Enlève les points noirs */
+    padding-left: 0; /* Enlève le padding par défaut */
+    padding: 30px 0px 0px;
+}
+
+.nav-item {
+    margin: 0 80px; /* Ajoute de l'espace entre les éléments */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement si nécessaire */
+    text-align: center; /* Centre le texte */
+}
+
+.nav-link {
+    text-align: center; /* Centrer le texte des liens */
+    color: black; /* Couleur du texte des liens */
+}
+
+.nav-link.active, .nav-link {
+    font-weight: bold; /* Rendre l'élément actif plus visible */
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 150px; /* Ajuste la largeur à la taille désirée */
+    height: auto; /* Maintient les proportions de l'image */
+    padding-left: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F9EBEB;
+    padding: 10px;
+
+}
+
+body {
+    margin: 0px;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.navbar2 {
+    background-color: #FFDBDB;
+    padding: 0px 0px 0px;
+}
+
+.logo2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo2 img {
+    width: 60%; /* Ajuste la largeur à la taille désirée */
+    height: 80; /* Maintient les proportions de l'image */
+    margin: 0px;
+}
+
+.barredoutil {
+    width: 20%;
+}
+
+.animaux {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banniere img {
+    width: 100%;
+    height: auto;
+}
+
+li, a {
+    text-decoration: none;
+}
