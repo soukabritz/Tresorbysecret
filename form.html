@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Pré-Paiement</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styleTB.css"> <!-- Lien vers votre fichier CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> <!-- Lien vers Google Fonts -->
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <img src="elements/logo22.png" alt="Logo" class="logo"> 
+            <nav class="progression">
+                <span class="active">panier</span>
+                <span>></span>
+                <span class="active bold">informations</span> 
+                <span>></span>
+                <span>expédition</span>
+                <span>></span>
+                <span>paiement</span>
+            </nav>
+            <h2 class="contact-title">Contact</h2> 
+            <form id="payment-form" action="/submit" method="POST">
+                <div class="form-group">
+                    <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter"> 
+                        envoyez-moi des nouvelles et des offres par e-mail
+                    </label>
+                </div>
+                <h2 class="address-title">Adresse d'expédition</h2>
+                <div class="form-group name-group">
+                    <div class="name-field">
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="name-field">
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group address-group">
+                    <div class="address-field">
+                        <input type="text" id="adresse" name="adresse" placeholder="Adresse" required>
+                    </div>
+                </div>
+                <div class="form-group location-group">
+                    <div class="location-field">
+                        <input type="text" id="ville" name="ville" placeholder="Ville" required>
+                    </div>
+                    <div class="location-field">
+                        <input type="number" id="code_postal" name="code_postal" placeholder="Code Postal" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled selected>Pays</option>
+                        <option value="france">France</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="remember" name="remember"> 
+                        se souvenir de mes coordonnées
+                    </label>
+                </div>
+                <button type="submit" id="submit-button">Procéder au Paiement</button>
+            </form>
+        </div>
+        <div class="cart-section">
+            <h1 class="cart-title">Mon Panier</h1>
+            <!-- Les articles du panier seront ajoutés ici dynamiquement -->
+        </div>
+    </body>
+</body>
+</html>

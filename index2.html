@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Produits - Tresor by Secret</title>
+    <link rel="stylesheet" href="styleTB.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar2">
+            <div class="animaux"><span> Cruelty Free </span></div>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./elements/groslogo.png" alt="logo">
+                </div>
+                <div class="menu-hamburger">
+                    <img src="./elements/menu-hamburger.png" alt="menu-hamburger">
+                </div>
+                <div class="search-icon">
+                    <img src="./elements/search-icon-.png" alt="search-icon">
+                </div>
+                <div class="logo2"> 
+                    <img src="./elements/logo22.png" alt="logo2">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item" style="list-style: none;">
+                            <a class="nav-link active" aria-current="page" href="#">Cosmetics</a>
+                        </li>
+                        <li class="nav-item" style="list-style: none;">
+                            <a class="nav-link" href="#">Fragrance</a>
+                        </li>
+                        <li class="nav-item" style="list-style: none;">
+                            <a class="nav-link" href="#">Skin</a>
+                        </li>
+                        <li class="nav-item" style="list-style: none;">
+                            <a class="nav-link disabled" href="#" aria-disabled="true">Discover</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="barre-icon-desk">
+                    <div class="heart-favoris-desk">
+                        <a class="icon-nav-link" href="#"><img src="./elements/heart-favoris.png" alt="favoris"></a>
+                    </div>
+                    <div class="sign-in-desk">
+                        <a class="icon-nav-link" href="#"><img src="./elements/sign-in.png" alt="sign-in"></a>
+                    </div>
+                    <div class="search-icon-desk">
+                        <a class="icon-nav-link" href="#"><img src="./elements/search-icon-.png" alt="search-icon"></a>
+                    </div>
+                    <div class="shopping-bag-desk">
+                        <a class="icon-nav-link" href="#"><img src="./elements/shopping-bag.png" alt="shopping-bag"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banniere2">
+            <img src="photos-produits/w (4).png" alt="banniere">
+        </div>
+    </header>
+    <main>
+        <h2 class="trendinglippies">Products</h2>
+        <div class="filter-bar">
+            <input type="text" id="search-" placeholder="Rechercher...">
+            <select>
+                <option value="">Filtrer par catégorie</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="fragrance">Fragrance</option>
+                <option value="skin">Skin</option>
+            </select>
+        </div>
+        <div class="carrousel-produits" id="product-carousel">
+            <!-- Les produits seront ajoutés ici dynamiquement -->
+        </div>
+        <div id="product-details" style="display: none;">
+            <h2>Détails du produit</h2>
+            <div id="details-content"></div>
+            <button id="back-button">Retour</button>
+            <button id="add-button">Ajouter au panier</button>
+        </div>
+        <div id="pagination"></div>
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Subscribe to our newsletter</p>
+            <div class="email-subscription">
+                <input type="email" placeholder="email address">
+                <button class="subscribe-button">submit</button>
+            </div>
+            <div class="social-media" style="text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="facebook" style="width: 24px; height: 24px;">
+                <img src="https://get-picto.com/wp-content/uploads/2024/02/logo-instagram-noir-png.webp" alt="instagram" style="width: 24px; height: 24px;">
+                <img src="https://get-picto.com/wp-content/uploads/2023/01/logo-twitter-500.webp" alt="twitter" style="width: 24px; height: 24px;">
+            </div>
+            <p style="text-align: center; margin-top: 10px;">© 2024 Tresor by Secret. Tous droits réservés.</p>
+            <hr>
+        </div>
+    </footer>
+</body>
+</html>

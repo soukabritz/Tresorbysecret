@@ -1,0 +1,44 @@
+[
+    {
+        "nom": "Produit 1",
+        "details": "Détails du produit 1",
+        "prix": "10€",
+        "avis": "★★★★☆",
+        "image": "./photos-produits/design-sans-titre.png"
+    },
+    {
+        "nom": "Produit 2",
+        "details": "Détails du produit 2",
+        "prix": "15€",
+        "avis": "★★★★★",
+        "image": "./photos-produits/design-sans-titre1.png"
+    },
+    {
+        "nom": "Produit 3",
+        "details": "Détails du produit 3",
+        "prix": "11.99€",
+        "avis": "★★★★★",
+        "image": "./photos-produits/design-sans-titre2.png"
+    },
+    {
+        "nom": "Produit 4",
+        "details": "Détails du produit 4",
+        "prix": "12.99€",
+        "avis": "★★★★☆",
+        "image": "./photos-produits/design3.png"
+    },
+    {
+        "nom": "Produit 5",
+        "details": "Détails du produit 5",
+        "prix": "13.99€",
+        "avis": "★★★★★",
+        "image": "./photos-produits/design4.png"
+    },
+    {
+        "nom": "Produit 6",
+        "details": "Détails du produit 6",
+        "prix": "14.99€",
+        "avis": "★★★★☆",
+        "image": "./photos-produits/design5.png"
+    }
+]
