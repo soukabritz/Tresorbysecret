@@ -664,8 +664,6 @@ hr {
 
 
 
-
-
 .banniere2 {
     position: relative;
     text-align: center;
@@ -769,7 +767,6 @@ footer {
 }
 
 
-/* Styles pour le carrousel de produits */
 .carrousel-produits {
     display: flex;
     flex-wrap: wrap;

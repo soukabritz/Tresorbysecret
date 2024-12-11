@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", async function() {
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('search') || '';
 
-    // Fonction pour récupérer les données des produits
     async function fetchData() {
         try {
             const response = await fetch('produit.json');
@@ -16,7 +15,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     }
 
-    // Fonction pour afficher les données des produits
     function displayData(data) {
         const carousel = document.querySelector('.carrousel');
         carousel.innerHTML = '';
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         console.error('Les éléments de filtrage n\'ont pas été trouvés.');
     }
 
-    // Fonction pour filtrer les produits
     function filterProducts() {
         const searchTerm = filterInput.value.toLowerCase();
         const selectedCategory = filterSelect.value;
@@ -88,7 +85,6 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     await fetchData();
 
-    // Fonction pour récupérer les données des produits
     function fetchData() {
         return new Promise(async (resolve) => {
             try {
@@ -104,11 +100,9 @@ document.addEventListener("DOMContentLoaded", async function() {
             } catch (error) {
                 console.error('Il y a eu un problème avec la récupération des données:', error);
             }
-            console.log('fetchData terminé'); 
         });
     }
     
-    // Fonction pour afficher les produits
     function displayProducts() {
         productCarousel.innerHTML = '';
         const start = (currentPage - 1) * productsPerPage;
@@ -140,10 +134,8 @@ document.addEventListener("DOMContentLoaded", async function() {
                 productCarousel.appendChild(div);
             });
         }
-        console.log('displayProducts terminé'); 
     }
 
-    // Fonction pour configurer la pagination
     function setupPagination() {
         const totalPages = Math.ceil(products.filter(product => {
             const matchesCategory = selectedCategory === '' || product.categorie === selectedCategory;
@@ -162,10 +154,8 @@ document.addEventListener("DOMContentLoaded", async function() {
             });
             paginationContainer.appendChild(button);
         }
-        console.log('setupPagination terminé'); 
     }
 
-    // Événements pour les filtres
     categoryFilter.addEventListener('change', (event) => {
         selectedCategory = event.target.value;
         localStorage.setItem('selectedCategory', selectedCategory);
@@ -183,7 +173,6 @@ document.addEventListener("DOMContentLoaded", async function() {
     });
 });
 
-// Fonction pour configurer les clics sur les produits
 function setupProductClick() {
     productCarousel.addEventListener('click', (event) => {
         const clickedItem = event.target.closest('.product-item');
@@ -198,7 +187,6 @@ function setupProductClick() {
     });
 }
 
-// Fonction pour afficher les détails du produit
 function afficherDetailsProduit(name, image, price, review) {
     const detailsContent = document.getElementById('details-content');
     detailsContent.innerHTML = `
@@ -211,7 +199,6 @@ function afficherDetailsProduit(name, image, price, review) {
     document.getElementById('product-carousel').style.display = 'none';
     document.getElementById('pagination').style.display = 'none';
 
-    // Écouteur pour le bouton "Ajouter au panier"
     document.getElementById('add-button').onclick = () => {
         addToCart(name, price);
     };
@@ -242,7 +229,6 @@ if (detailsContent) {
     console.error('L\'élément details-content n\'existe pas.');
 }
 
-// Fonction pour ajouter un produit au panier
 function addToCart(name, price) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push({ name, price });
@@ -250,7 +236,6 @@ function addToCart(name, price) {
     alert(`${name} a été ajouté au panier.`);
 }
 
-// Fonction pour afficher le contenu du panier sur la page de pré-paiement
 function displayCart() {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cartSection = document.querySelector('.cart-section');
@@ -270,7 +255,6 @@ function displayCart() {
     cartSection.appendChild(totalDiv);
 }
 
-// Appeler displayCart lors du chargement de la page de pré-paiement
 document.addEventListener('DOMContentLoaded', () => {
     displayCart(); // Afficher le contenu du panier
 });
